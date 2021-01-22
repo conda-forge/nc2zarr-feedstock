@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - nc2zarr = nc2zarr.cli:nc2zarr
@@ -46,7 +46,7 @@ test:
     - nc2zarr --help
 
 about:
-  home: https://github.com/simplejson/simplejson
+  home: https://github.com/bcdev/nc2zarr
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -54,8 +54,8 @@ about:
   description: |
     nc2zarr reads one or more NetCDF datasets and writes or appends them
     to a single Zarr output dataset.
-  doc_url: https://github.com/simplejson/simplejson/README.md
-  dev_url: https://github.com/simplejson/simplejson
+  doc_url: https://github.com/bcdev/nc2zarr/blob/main/README.md
+  dev_url: https://github.com/bcdev/nc2zarr
 
 extra:
   recipe-maintainers:
