@@ -1,7 +1,7 @@
 About nc2zarr
 =============
 
-Home: https://github.com/simplejson/simplejson
+Home: https://github.com/bcdev/nc2zarr
 
 Package license: MIT
 
@@ -9,9 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nc2zarr-feedsto
 
 Summary: A Python tool that converts NetCDF files to Zarr format
 
-Development: https://github.com/simplejson/simplejson
+Development: https://github.com/bcdev/nc2zarr
 
-Documentation: https://github.com/simplejson/simplejson/README.md
+Documentation: https://github.com/bcdev/nc2zarr/blob/main/README.md
 
 nc2zarr reads one or more NetCDF datasets and writes or appends them
 to a single Zarr output dataset.
