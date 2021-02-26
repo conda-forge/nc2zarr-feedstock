@@ -42,10 +42,6 @@ test:
   source_files:
     - tests
   commands:
-    # Test suite disabled for 0.1.0 release, since bugs in the test
-    # suite causes some tests to fail intermittently -- see
-    # https://github.com/bcdev/nc2zarr/issues/8 . The bug's been fixed
-    # in main, so tests can be re-enabled in the next release.
     - pytest tests
     - nc2zarr --help
 
