@@ -44,6 +44,7 @@ Installing `nc2zarr` from the `conda-forge` channel can be achieved by adding `c
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `nc2zarr` can be installed with:
