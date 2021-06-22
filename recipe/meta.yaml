@@ -1,5 +1,5 @@
 {% set name = "nc2zarr" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/bcdev/nc2zarr/archive/v{{ version }}.tar.gz
-  sha256: 9d96a21b0af131b5eb1d890afcf8a460b3fd4f5f30a963d7ce816ebf24c00915
+  sha256: f4707915cdbd7c44f96dcf4b22643bdec68e76912dfc0194115190f08767a514
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - nc2zarr = nc2zarr.cli:nc2zarr
 
@@ -50,7 +50,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A Python tool that converts NetCDF files to Zarr format'
+  summary: A Python tool that converts NetCDF files to Zarr format
   description: |
     nc2zarr reads one or more NetCDF datasets and writes or appends them
     to a single Zarr output dataset.
@@ -62,6 +62,6 @@ extra:
     - bcdev
     - pont-us
     - forman
-    - AliceBalfanz    
+    - AliceBalfanz
     - dzelge
     - TonioF
