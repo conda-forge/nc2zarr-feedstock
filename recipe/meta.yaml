@@ -1,5 +1,5 @@
 {% set name = "nc2zarr" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/bcdev/nc2zarr/archive/v{{ version }}.tar.gz
-  sha256: 9aa981128590436ee0d4fb2f23c4cc7b1a76ba30d1b8ddf2d2cac9263a89abdf
+  sha256: 6d8fce793901d3314183c2c9f79d040ef8deb1fdc14a6bf83fde157c7c995252
 
 build:
   noarch: python
