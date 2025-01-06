@@ -60,9 +60,11 @@ about:
 
 extra:
   recipe-maintainers:
-    - bcdev
-    - pont-us
-    - forman
     - AliceBalfanz
-    - dzelge
+    - b-yogesh
+    - forman
+    - konstntokas
+    - pont-us
+    - TejasMorbagal
+    - thomasstorm
     - TonioF
