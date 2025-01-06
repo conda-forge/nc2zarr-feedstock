@@ -11,17 +11,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - nc2zarr = nc2zarr.cli:nc2zarr
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - click
     - dask
     - fsspec
@@ -39,6 +39,7 @@ test:
     - nc2zarr
   requires:
     - pytest
+    - python {{ python_min }}
   source_files:
     - tests
   commands:
