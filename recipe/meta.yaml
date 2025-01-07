@@ -1,5 +1,5 @@
 {% set name = "nc2zarr" %}
-{% set version = "1.2.3" %}
+{% set version = "1.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/bcdev/nc2zarr/archive/v{{ version }}.tar.gz
-  sha256: 31800853dcd8aa165d90a5634217f892bf1227456d7a030e2ea5556e4c4803cb
+  sha256: da3ce6ead172176e37af87ef543aeec702c9f88509dda5a3f5f5db6bb30f7b0e
 
 build:
   noarch: python
@@ -45,10 +45,7 @@ test:
     - tests
   commands:
     - nc2zarr --help
-#    - pytest tests
-# Test suite run temporarily deactivated for 1.2.3 build, since
-# failing tests can't be updated in the conda release without a new
-# GitHub release.
+    - pytest tests
 
 about:
   home: https://github.com/bcdev/nc2zarr
