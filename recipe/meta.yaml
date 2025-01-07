@@ -45,10 +45,7 @@ test:
     - tests
   commands:
     - nc2zarr --help
-#    - pytest tests
-# Test suite run temporarily deactivated for 1.2.3 build, since
-# failing tests can't be updated in the conda release without a new
-# GitHub release.
+    - pytest tests
 
 about:
   home: https://github.com/bcdev/nc2zarr
