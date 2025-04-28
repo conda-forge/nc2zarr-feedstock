@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - nc2zarr = nc2zarr.cli:nc2zarr
@@ -31,9 +31,9 @@ requirements:
     - pandas
     - pyyaml
     - retry
-    - s3fs
+    - s3fs >=2022.1.0
     - xarray
-    - zarr
+    - zarr <3
 
 test:
   imports:
